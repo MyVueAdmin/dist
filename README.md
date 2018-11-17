@@ -12,7 +12,7 @@ Any modern web-browser with JavaScript, cookies and local storage support.
 Download files from this repository or just clone it to to any location on your web-server, it may be root folder of your web server or any subfolder.
 ## Step 2 - not required but very important
 Change security setting in folder "backend/config.ini". It has description of each parameter inside.
-## Step 3
+## Step 3 - use it
 MyVueAdmin will be available in its folder URL through web-browser.
 
 # More info: backend and frontend
