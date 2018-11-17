@@ -8,8 +8,8 @@ PHP with OpenSSL. PHP7 is recommended but not required.
 Any modern web-browser with JavaScript, cookies and local storage support.
 
 # Installation
-## Step 1
-Download needed version and put it in a desired location on your web-server, it may be root folder of your web server or any subfolder.
+## Step 1 - download or clone
+Download files from this repository or just clone it to to any location on your web-server, it may be root folder of your web server or any subfolder.
 ## Step 2 - not required but very important
 Change security setting in folder "backend/config.ini". It has description of each parameter inside.
 ## Step 3
