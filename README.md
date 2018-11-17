@@ -1,5 +1,5 @@
 # :heavy_check_mark: MyVueAdmin
-MyVueAdmin (MVA) is a web application for MySQL-databases management. It is created to be fast and deliver "nice-to-use" experience. This repo contains compiled versions of MyVueAdmin
+MyVueAdmin (MVA) is a web application for MySQL-databases management. It is created to be fast and deliver "nice-to-use" experience. This repo contains compiled versions of MyVueAdmin.
 
 # :computer: Requirements
 ## Server side
@@ -19,4 +19,4 @@ MyVueAdmin will be available in its folder URL through web-browser.
 MVA consists of two parts - backend and frontend. Backend part is a simple REST-application written in PHP, meanwhile all logics and interesting stuff are in frontend part. MVA frontend is based on Vue.js (this is where "Vue" part comes) framework and works as SPA (single page application).
 
 # :page_facing_up: Source code
-Sources will be available shortly
+Sources will be available shortly.
