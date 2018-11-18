@@ -42,10 +42,6 @@ class Driver {
 				exit;
 			break;
 		}
-
-		// $r = setcookie ("test", "lalala",time()+60*60*24*3000,'/','mva.tcrm.online');
-		// $answer["test"] = "test = ". $_COOKIE["test"] ." / ".$r;
-
 		return $answer;
 	}
 

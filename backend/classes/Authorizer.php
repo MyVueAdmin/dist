@@ -98,21 +98,6 @@ class Authorizer {
 		session_write_close();
 	}
 
-	/*
-	function authorization( )
-	{
-		$incoming = json_decode($this->decrypt($this->token), true);
-		$credentials = $incoming["info"];
-		$this->expire = $incoming["expire"];
-		$hash = $this->hash($credentials);
-		if ($hash != $incoming["hash"] || $this->expire < time()) return false;
-		$this->decrypt_credentials($credentials);
-		return true;
-    }
-	 *
-	 */
-
-
 	function fingerprints($encrypted_credentials, $session_id) {
 		return [
 			$session_id,

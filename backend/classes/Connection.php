@@ -53,8 +53,6 @@ class Connection extends mysqli
 				return null;
 			default: return $resource;
 		}
-
-
 	}
 
 	function build_assoc($r)
