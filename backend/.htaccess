@@ -1,0 +1,7 @@
+RewriteEngine On
+DirectoryIndex index.php
+
+<Files *.ini>
+  order allow,deny
+  deny from all
+</Files>

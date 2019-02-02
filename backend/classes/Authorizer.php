@@ -21,8 +21,9 @@ class Authorizer {
 	private $expire;
 
 	public $connection;
+	public $aliases;
 
-	function __construct($method, $key, $salt, $expire)
+	function __construct($method, $key, $salt, $expire, $aliases = [])
 	{
 		$this->username = "";
 		$this->password = "";
@@ -32,10 +33,15 @@ class Authorizer {
 		$this->lifetime = $expire*60;
 		$this->expire = 0;
 		$this->connection = false;
+		$this->aliases = $aliases;
 	}
 
-	function username() { return $this->username; }
-	function password()	{ return $this->password; }
+	function checkAliases() {
+		return $this->username == $this->aliases["username_alias"] && $this->password == $this->aliases["password_alias"];
+	}
+
+	function username() { return $this->checkAliases() ? $this->aliases["username"] : $this->username; }
+	function password()	{ return $this->checkAliases() ? $this->aliases["password"] : $this->password; }
 
 	function parseHeader() {
 		$headers = array_change_key_case(apache_request_headers());

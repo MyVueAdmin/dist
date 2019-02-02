@@ -9,7 +9,8 @@ $authorizer = new Authorizer(
 	$config["security"]["method"],
 	$config["security"]["key"],
 	$config["security"]["salt"],
-	$config["security"]["expire"]
+	$config["security"]["expire"],
+	$config["access"]
 );
 
 $driver = new Driver();
