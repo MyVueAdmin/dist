@@ -19,14 +19,9 @@ MyVueAdmin will be available in its folder URL through web-browser.
 MVA consists of two parts - backend and frontend. Backend part is a simple REST-application written in PHP, meanwhile all logics and interesting stuff are in frontend part. MVA frontend is based on Vue.js (this is where "Vue" part comes) framework and works as SPA (single page application).
 
 # :page_facing_up: Source code
-See [MyVueAdmin/frontend](https://github.com/MyVueAdmin/frontend) and [MyVueAdmin/backend](https://github.com/MyVueAdmin/backend).
+ - Frontend (Vue.js): https://github.com/MyVueAdmin/frontend
+ - Backend (PHP): https://github.com/MyVueAdmin/backend
 
 # :pill: Try it
-Demo version: <a href="http://mva-demo.herokuapp.com" target=_blank>mva-demo</a>  
-Username/password: demo/demo  
-
-# :pill: Try it
-Demo version: <a class='132' href="http://mva-demo.herokuapp.com" target=_blank>mva-demo</a>  
-
-[http://mva-demo.herokuapp.com "(target|_blank)"]
-Username/password: demo/demo  
+Demo version: http://mva-demo.herokuapp.com  
+Username/password: demo/demo 
