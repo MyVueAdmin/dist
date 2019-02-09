@@ -25,4 +25,8 @@ See [MyVueAdmin/frontend](https://github.com/MyVueAdmin/frontend) and [MyVueAdmi
 Demo version: <a href="http://mva-demo.herokuapp.com" target=_blank>mva-demo</a>  
 Username/password: demo/demo  
 
+# :pill: Try it
+Demo version: <a class='132' href="http://mva-demo.herokuapp.com" target=_blank>mva-demo</a>  
 
+[http://mva-demo.herokuapp.com "(target|_blank)"]
+Username/password: demo/demo  
