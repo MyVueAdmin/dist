@@ -23,4 +23,5 @@ See [MyVueAdmin/frontend](https://github.com/MyVueAdmin/frontend) and [MyVueAdmi
 
 # :pill: Try it
 Demo version: http://mva-demo.herokuapp.com
+
 Username/password: demo/demo
