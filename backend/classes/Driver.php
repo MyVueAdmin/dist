@@ -30,6 +30,9 @@ class Driver {
 						$answer["status"] = "fail";
 						$answer["data"] = $this->connection->message;
 					}
+				} else {
+					$answer["status"] = "fail";
+					$answer["data"] = $authorizer->error;
 				}
 			break;
 			case Authorizer::TOKEN_CLEAR:

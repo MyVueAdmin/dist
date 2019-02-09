@@ -5,7 +5,6 @@ class Authorizer {
 	const TOKEN_CLEAR = 9;
 	const WRONG_INPUT = 0;
 
-
 	const RESULT_TOKEN = 1;
 	const RESULT_ACCESS = 2;
 	const RESULT_FAIL = 0;
@@ -19,6 +18,8 @@ class Authorizer {
 	private $salt;
 	public $lifetime;
 	private $expire;
+
+	public $error;
 
 	public $connection;
 	public $aliases;
@@ -34,6 +35,7 @@ class Authorizer {
 		$this->expire = 0;
 		$this->connection = false;
 		$this->aliases = $aliases;
+		$this->error = "";
 	}
 
 	function checkAliases() {
@@ -89,8 +91,12 @@ class Authorizer {
 		$credentials = $_SESSION["credentials"];
 		$this->expire = $_SESSION['expire'];
 		$hash = $this->hash($credentials, $this->token);
-		if ($hash != $_SESSION['hash']) return false;
+		if ($hash != $_SESSION['hash']) {
+			$this->error = "wrong";
+			return false;
+		}
 		if ($this->expire < time()) {
+			$this->error = "expired";
 			$this->close();
 			return false;
 		}
@@ -113,7 +119,6 @@ class Authorizer {
 			$_SERVER['HTTP_USER_AGENT'],
 			$_SERVER['HTTP_X_FORWARDED_FOR'],
 			$_SERVER['HTTP_X_REAL_IP'],
-			$_SERVER['REMOTE_ADDR'],
 			$_SERVER['REMOTE_HOST'],
 			$_SERVER['HTTP_ACCEPT_CHARSET'],
 			$_SERVER['HTTP_ACCEPT_ENCODING'],
