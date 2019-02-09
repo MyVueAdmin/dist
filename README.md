@@ -22,5 +22,7 @@ MVA consists of two parts - backend and frontend. Backend part is a simple REST-
 See [MyVueAdmin/frontend](https://github.com/MyVueAdmin/frontend) and [MyVueAdmin/backend](https://github.com/MyVueAdmin/backend).
 
 # :pill: Try it
-Demo version: http://mva-demo.herokuapp.com  
-Username/password: demo/demo
+Demo version: <a href="http://mva-demo.herokuapp.com" target="blank">http://mva-demo.herokuapp.com</a>  
+Username/password: demo/demo  
+
+
